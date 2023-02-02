@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.prettierrc.js
+.eslintrc.js
+env.d.ts
+vite.config.ts.timestamp-1675221494899.mjs
+vite.config.ts.timestamp-1675221494899.mjs
+**/*.js
+*.js
