@@ -2,13 +2,11 @@ import './navbar.css';
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import LoginButton from '../LoginButton/LoginButton.component';
 import { useState } from 'react';
-import { colours } from 'utils/colors';
 
 function Navbar(){
 
-    const [isLogin, setLogin] = useState<boolean>(false);
+    const [isLogin, setLogin] = useState<boolean>(true);
     const navigate = useNavigate();
-
     return(
         <>
         {
@@ -16,14 +14,17 @@ function Navbar(){
             ?
             <div>
                 <Link to="/logout">Wildlife Analytics</Link>
-                <LoginButton label="logout" primary={"bg-red-700"} border="text-red-700" hoverbg="border-red-700" hovertext="bg-zinc-900"onClick={(e) => navigate("/logout")}/>
+                <LoginButton label="Login" primary={"bg-blue"} text={"text-white"} border={"border-blue"} hoverbg={"border-red-700"} hovertext="bg-zinc-900" onClick={() => navigate("/logout")} setLogin={!isLogin}/>
             </div>       
+
             :
+
             <div>
                 <Link to="/login">Wildlife Analytics</Link>
-                <LoginButton label="Login" primary={"bg-red-700"} border="text-red-700" hoverbg="border-red-700" hovertext="bg-zinc-900"/>
+                <LoginButton label="Login" primary={"bg-green"} border="text-red-700" hoverbg="border-red-700" hovertext="bg-zinc-900"/>
             </div>
         }
+        
         </>
     )
 }

@@ -9,15 +9,9 @@ import LoginButton from './components/LoginButton/LoginButton.component';
 function App() {
   
   return (
-    // <div className="app">Gaaaaaaaah
-    // <Navbar />
-    
-    // </div>
-    
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LoginPage/>}/>
-          <Route path="/dashboard" element={<LoginPage/>}/>
         </Routes>
       </BrowserRouter>
   )
