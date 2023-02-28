@@ -11,6 +11,9 @@
     "start": "npm-run-all --parallel dev lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.10",
     "eslint-config-prettier": "^8.6.0",
     "prettier": "^2.8.3",
     "react": "^18.2.0",
