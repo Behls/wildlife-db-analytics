@@ -1,31 +1,31 @@
 import './navbar.css';
 import { Outlet, Link, useNavigate } from "react-router-dom";
-import LoginButton from '../LoginButton/LoginButton.component';
+import LogoutButton from '../LogoutButton/LogoutButton.component';
 import { useState } from 'react';
 
 function Navbar(){
 
     const [isLogin, setLogin] = useState<boolean>(true);
     const navigate = useNavigate();
+    
     return(
-        <>
-        {
-            isLogin
-            ?
-            <div>
-                <Link to="/logout">Wildlife Analytics</Link>
-                <LoginButton label="Login" primary={"bg-blue"} text={"text-white"} border={"border-blue"} hoverbg={"border-red-700"} hovertext="bg-zinc-900" onClick={() => navigate("/logout")} setLogin={!isLogin}/>
-            </div>       
-
-            :
-
-            <div>
-                <Link to="/login">Wildlife Analytics</Link>
-                <LoginButton label="Login" primary={"bg-green"} border="text-red-700" hoverbg="border-red-700" hovertext="bg-zinc-900"/>
-            </div>
-        }
-        
-        </>
+            <>
+            {
+                isLogin ? 
+                <nav className="flex items-center flex-wrap bg-blue p-6 w-screen">
+                    <div className="flex items-center flex-shrink-0 mr-6 w-full" style={{justifyContent: 'space-between'}}>
+                        <span className="flex font-semibold text-xl tracking-tight text-white">Wildlife Analytics</span>
+                        <LogoutButton label="Logout"  class={"flex text-sm px-6 leading-none py-2 bg-white text-blue rounded mt-4 lg:mt-0"} onClick={() => navigate("/logout")} setLogin={!isLogin}/>
+                    </div>
+                </nav>
+                :
+                <nav className="flex items-center flex-wrap bg-transparent p-6 w-screen">
+                    <div className="flex items-center flex-shrink-0 mr-6 w-full" style={{justifyContent: 'space-between'}}>
+                        <span className="flex font-semibold text-xl tracking-tight text-blue">Wildlife Analytics</span>
+                    </div>
+                </nav>                
+            }   
+            </>
     )
 }
 

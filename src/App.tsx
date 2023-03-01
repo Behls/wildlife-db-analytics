@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Navbar from './components/Navbar/Navbar.component'
 import LoginPage from './pages/Login';
-import LoginButton from './components/LoginButton/LoginButton.component';
+import LoginButton from './components/LogoutButton/LogoutButton.component';
 
 function App() {
   
