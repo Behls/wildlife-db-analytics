@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar.component'
 import LoginPage from './pages/Login';
 import LoginButton from './components/LogoutButton/LogoutButton.component';
+import DashboardPage from './pages/Dashboard';
 
 function App() {
   
@@ -12,6 +13,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LoginPage/>}/>
+          <Route path="/login" element={<LoginPage/>}/>
+          {/* <Route path="/logout" element={<LoginPage/>}/> */}
+          <Route path="/dashboard" element={<DashboardPage/>}/>
         </Routes>
       </BrowserRouter>
   )

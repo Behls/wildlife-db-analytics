@@ -23,10 +23,16 @@ module.exports = {
         'loginHeader': "#1471A5"
     },
     width:{
-      'loginWidth': "1000px"
+      'loginWidth': "1000px",
+      'inputwidth': "340px",
     },
     height:{
-      'loginHeight': "400px"
+      'loginHeight': "430px",
+      'inputHeight': "38px"
+
+    },
+    dropShadow:{
+      'dropBlue': "0px 4px 8px rgba(36, 55, 224, 0.3)"
     }
   }
   },
