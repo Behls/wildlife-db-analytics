@@ -17,7 +17,17 @@ module.exports = {
         'purple': "#6b61d7",
         'lightBlue': "#70bfeb",
         'grey': "#9db8c7",
+        'lineBlue': "#4D9ECC",
+        'loginBG': "#F5F8FE",
+        'loginOrange': "#FEF3E3",
+        'loginHeader': "#1471A5"
     },
+    width:{
+      'loginWidth': "1000px"
+    },
+    height:{
+      'loginHeight': "400px"
+    }
   }
   },
   plugins: [],
