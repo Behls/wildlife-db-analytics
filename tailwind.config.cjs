@@ -20,15 +20,19 @@ module.exports = {
         'lineBlue': "#4D9ECC",
         'loginBG': "#F5F8FE",
         'loginOrange': "#FEF3E3",
-        'loginHeader': "#1471A5"
+        'loginHeader': "#1471A5",
+        'error':'#BA5262'
     },
     width:{
       'loginWidth': "1000px",
       'inputwidth': "340px",
+      'modalErrorWidth': "410px",
     },
     height:{
       'loginHeight': "430px",
-      'inputHeight': "38px"
+      'inputHeight': "38px",
+      'modalErrorHeight': "288px",
+
 
     },
     dropShadow:{

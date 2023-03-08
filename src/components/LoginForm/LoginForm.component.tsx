@@ -38,7 +38,7 @@ function LoginForm(){
                             type="email" 
                             name="username" 
                             className="bg-white border border-solid border-blue rounded w-96 h-inputHeight text-blue py-2 px-2" 
-                            required
+                            // required
                             />
 
                             {errors.email?.type === 'required' && <span className=" text-red-500"> This field is required</span>}
@@ -55,11 +55,11 @@ function LoginForm(){
                             <input 
                                 {...register("password", { 
                                     required: true 
-                                    })} 
+                                })} 
                                 type="password" 
                                 name="password" 
                                 className="bg-white border border-solid border-blue rounded w-96 h-inputHeight text-blue py-2 px-2"
-                                required
+                                // required
                                 />
 
                             {errors.password?.type === 'required' && <span className=" text-red-500"> This field is required</span>}
