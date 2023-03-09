@@ -21,22 +21,25 @@ module.exports = {
         'loginBG': "#F5F8FE",
         'loginOrange': "#FEF3E3",
         'loginHeader': "#1471A5",
-        'error':'#BA5262'
+        'error':'#BA5262',
+        "donation":"#54897C"
     },
     width:{
       'loginWidth': "1000px",
       'inputwidth': "340px",
-      'modalErrorWidth': "410px",
+      'modalErrorWidth': "400px",
     },
     height:{
       'loginHeight': "430px",
       'inputHeight': "38px",
-      'modalErrorHeight': "288px",
-
-
+      'modalErrorHeight': "250px",
     },
     dropShadow:{
-      'dropBlue': "0px 4px 8px rgba(36, 55, 224, 0.3)"
+      'dropBlue': "0px 4px 8px rgba(36, 55, 224, 0.3)",
+      'dropModal': "0px 4px 8px rgba(0, 0, 0, 0.3)"
+    },
+    minHeight:{
+      'modalErrorHeight': "288px"
     }
   }
   },
