@@ -13,9 +13,8 @@ function LoginForm(){
 
 
     return(
-            <div className="flex wrapper w-loginWidth h-loginHeight mx-auto my-16">
-                
-                <div className="w-1/2 bg-loginOrange rounded-l-lg overflow-hidden">
+            <div className="flex wrapper w-loginWidth h-loginHeight mx-auto my-12">
+                <div className="w-1/2 bg-loginOrange rounded-l-lg overflow-hidden ">
                     <img src={wildlife}></img>
                 </div>
                 
